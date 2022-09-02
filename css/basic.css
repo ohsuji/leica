@@ -1,0 +1,288 @@
+/****** 기본설정 ******/
+@charset "UTF-8";
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+    
+}
+/****** class ******/
+.header_top, .header_title, .s1, .s3_cont, .s4_cont, .footer_in {
+    max-width: 1200px;  
+    margin: 0 auto;
+}
+
+/****** 상단영역 *******/
+header {
+    width: 100%;   /*생략가능*/
+    height: 500px;
+    background-image: url('../img/header.bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 0;
+}
+.top_logo {
+    
+}
+.top_logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ec1919;
+}
+.top_menu {
+    
+}
+.top_menu ul {
+
+}
+.top_menu li {
+    float: left;
+    margin-left: 15px;
+}
+.top_menu a {
+    color: #f1f3f4;
+    margin-left: 25px;
+}
+.top_menu a:hover {
+    color: #ec1919;
+    transition: .4s;
+}
+.header_title {
+    color: #f2f2f2;
+    /* 단순히 가운데 정렬
+    text-align: center;
+    padding-top: 100px; */ 
+    padding: 200px 10px 0 30px;
+}
+.header_title h1 {
+    font-size: 45px;
+}
+.header_title p {
+    font-size: 25px;
+}
+/****** nav ******/
+.gnb {
+    height: 50px;
+    background: #151515;
+}
+.gnb > div {
+    
+    text-align: center;
+}
+.gnb ul {
+    display: inline-block;
+}
+.gnb li { 
+    float: left;
+}
+li.active a, .gnb li:hover a {
+    color: #f1f3f4;
+}
+li.active a:after, .gnb li:hover a:after  {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #ec1919;
+    margin-top: -5px;
+}
+.gnb li a {
+    display: inline-block;
+    margin: 0 45px;
+    line-height: 50px;
+    color: #eee;
+}
+/****** cntents ******/
+section {
+    
+}
+.s1 {
+    display: flex;
+    margin: 110px auto;
+}
+.s1 > div {
+    flex: 1;
+}
+.s1 img {
+    width: 280px;
+    height: 180px; 
+}
+.s1_txt {
+    padding-top: 10px;
+    text-align: center;
+    width: 280px;
+}
+.s1_txt strong {
+    
+}
+.s1_txt span {
+    font-size: 14px;
+    color: #858585;
+}
+
+.s2 {
+    background: #f2f2f2;
+    padding: 80px; 
+}
+.s2 > div {
+    text-align: center;
+}
+.s2_icons {
+    display: inline-block;
+}
+.s2_icons li {
+    display: inline-block;
+    margin: 0 40px;
+}
+.s2_icons span {
+    display: block;
+}
+.s2_icons span img {
+
+}
+.s2_icons span p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.s3 {
+    margin: 110px auto;
+}
+.s3_title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.s3_title p {
+    color: #858585;
+}
+.s3_title h3 {
+    font-size: 27px;
+    margin-top: 10px;
+}
+.s3_title h3:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    width: 80px;
+    height: 5px;
+    background: #ec1919;
+    margin-top: -5px;
+}
+.s3_cont {
+    padding: 0 10px;
+    display: flex;
+}
+.s3_cont > div {
+}
+.s3_cont > div:nth-child(2) {
+    margin: 0 20px;
+}
+.s3_cont > div:nth-child(2) img:nth-child(1) {
+    margin-bottom: 20px;
+}
+.s3_cont > div:last-child {
+    padding: 50px 0 50px;
+    width: 800px;
+    text-align: center;
+}
+.s3_cont > div:last-child h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.s3_cont > div:last-child small {
+    text-align: center;
+}
+.s3_cont > div:last-child p {
+    margin: 30px 0 40px;
+    font-size: 14px;
+}
+.more {
+    color: #ec1919;
+}
+.sns {
+    margin-top: 20px;
+}
+.sns a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #111;
+    border-radius: 50%;
+    margin: 10px;
+}
+.sns img {
+    transform: translateY(5px);
+}
+
+.s4_cont {
+    margin: 110px auto;
+}
+.s4_cont h3 {
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+.s4_cont h3:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 136px;
+    height: 5px;
+    background: #ec1919;
+    margin-top: -5px;
+}
+.s4_cont ul { 
+    display: flex;
+    justify-content: space-between;
+}
+.s4_cont li {
+
+}
+.s4_cont img {
+    width: 180px;
+    height: 200px;
+}
+
+footer{
+    background: #151515;
+    padding: 50px 0;
+    
+}
+.footer_in {
+    color: #f2f2f2;
+    
+}
+footer h4 {
+    font-size: 24px;
+    color: #ec1919;
+}
+footer p {
+    text-align: right;
+}
+footer .address {
+    text-align: right;
+    display: block;
+}
+footer span {
+    
+}
+footer span:nth-child(2) {
+    color: rgb(85,85,85);  
+    line-height: 3;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
